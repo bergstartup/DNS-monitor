@@ -18,7 +18,7 @@ The architecture and communication between modules are easy to plan if implement
 <br>
 The following shows the diagrammatic representation of the architecture.
 <br>
-<img>
+<img src="images/architecture.png" alt="architecture">
 <br><br>
 Components mentioned:<br>
 DNS sniffer<br>
