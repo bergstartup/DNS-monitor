@@ -10,7 +10,15 @@ For communication among modules
 Following are global variables
 1.File_changed
 2.Mailed
-
+3.Filename
+4.File_pointer
+5.File_size_limit
+6.SMTP
+7.SMTP_port
+8.SMTP_user
+9.SMTP_password
+10.Email
+11.debug
 -------------------------------
 Functionalities of each module
 
@@ -25,7 +33,7 @@ Sniff dns packets and get the URL to the event_queue
 ----------------------------------
 Event queue
 
-All modules communicate through event queue. They append their output to the dipatch queue. The Controller
+All modules communicate through event queue. They append their output to the event queue. The Controller
 module pop from event queue and execute the corresponding function.
 
 event queus's element format
@@ -74,6 +82,11 @@ SMTP_user=None
 SMTP_password=None
 Email=None
 
+
+
+"""
+FUNCTION DEFINITION
+"""
 def get_latest_filename():
     logs=listdir("logs/")
     nums=[]
@@ -134,6 +147,7 @@ def init_global_variables():
         print("File_size_limit :",File_size_limit)
         print("SMTP : ",SMTP)
         print("SMTP port : ",SMTP_port)
+
 
 """
 EVENT QUEUE
