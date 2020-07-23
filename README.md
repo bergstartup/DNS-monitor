@@ -28,7 +28,7 @@ Write_to_file<br>
 Get_new_file<br>
 Mailer<br>
 <br><br>
-<b>DNS sniffer</b>
+<b>DNS sniffer</b><br>
 Implemented with "scapy", sniffs for DNS packets. If got, it enques the URL in event queue with format [1,URL]. The format will be explained in later part. DNS sniffer is executed as sepereate thread.
 <br><br>
 <b>Event queue</b><br>
