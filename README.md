@@ -20,7 +20,7 @@ The following shows the diagrammatic representation of the architecture.
 <br>
 <img src="images/event_architecture.png" alt="architecture">
 <br><br>
-Components mentioned:<br>
+<i>Components mentioned</i><br>
 DNS sniffer<br>
 Event queue<br>
 The controller<br>
