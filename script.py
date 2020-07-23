@@ -107,7 +107,7 @@ def init_global_variables():
         logs=[]
 
     if len(logs)==0:
-        name="logs_1.log"
+        name="log_1.log"
     else:
         name=get_latest_filename()
     Filename=name
