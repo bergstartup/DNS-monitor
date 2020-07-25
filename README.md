@@ -35,7 +35,7 @@ Implemented with "scapy", sniffs for DNS packets. If got, it enques the URL in e
 Event queue is the list datastructure where outputs from the modules are enqued here. All request are served in FIFO order. The elements in Event queue has following format <i><Event_id,Message></i>. Event_id helps controller to call respective function.
 <br><br>
 <b>The controller</b><br>
-Controller pops request from event_queue calls the function assigned for respective Event_id and pass the message as argument. It runs as seperate thread. Following are Event_id and respective function pair.
+  Controller <i>[Sort of like demux]</i> pops request from event_queue calls the function assigned for respective Event_id and pass the message as argument. It runs as seperate thread. Following are Event_id and respective function pair.
 (0,write_to_file),(1,get_new_file),(2,mailer). <i>Mailer</i> is an async call, since its a rare call and independent from other modules. That is, the pointer returns to the controller as soon as the function starts executing, it won't wait till function finishes. Whereas <i>write_to_file</i> and <i>get_new_file</i> is synchronous. Since common resourse exist among those components.
 <br><br>
 <b>Write to file</b><br>
