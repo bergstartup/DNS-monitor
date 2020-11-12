@@ -54,4 +54,4 @@ Above description only provides the overall picture of the program. Several mute
 <br><br>
 <b>Enhancements</b>
 <br>
-The design of conttroller should be enchanced to batch-up similar request for improved efficency. For example, the <b>write to file</b> could be batched.
+The design of controller should be enchanced to batch-up similar request for improved efficency. For example, the <b>write to file</b> could be batched.
