@@ -32,7 +32,7 @@ Mailer<br>
 Implemented with "scapy", sniffs for DNS packets. If got, it enques the URL in event queue with format [1,URL]. The format will be explained in later part. DNS sniffer is executed as sepereate thread.
 <br><br>
 <b>Event queue</b><br>
-Event queue is the list datastructure where outputs from the modules are enqued here. All request are served in FIFO order. The elements in Event queue has following format <i><Event_id,Message></i>. Event_id helps controller to call respective function.
+Event queue is the list datastructure where outputs from the modules are enqued. All request are served in FIFO order. The elements in it has following format <i><Event_id,Message></i>. Event_id helps controller to call respective function.
 <br><br>
 <b>The controller</b><br>
   Controller <i>[Sort of like demux]</i> pops request from event_queue calls the function assigned for respective Event_id and pass the message as argument. It runs as seperate thread. Following are Event_id and respective function pair.
